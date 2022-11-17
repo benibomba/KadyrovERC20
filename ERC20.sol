@@ -24,7 +24,7 @@ contract SafeMath {
 }
 // require(b <= a);
 
-contract Alisher is ERC20Interface, SafeMath {
+contract Zhanerke is ERC20Interface, SafeMath {
     string public name;
     string public symbol;
     uint8 public decimals; // 18 decimals is the strongly suggested default, avoid changing it
@@ -35,8 +35,8 @@ contract Alisher is ERC20Interface, SafeMath {
     mapping(address => mapping(address => uint)) allowed;
 
     constructor() public {
-        name = "Alisher";
-        symbol = "KA";
+        name = "Zhanerke";
+        symbol = "Tenge";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
 

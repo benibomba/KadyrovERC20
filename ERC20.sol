@@ -12,7 +12,7 @@ contract ERC20Interface {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
 
-contract SafeMath {
+contract Math {
     function safeAdd(uint a, uint b) public pure returns (uint c) {
         c = a + b;
         require(c >= a);
@@ -24,7 +24,7 @@ contract SafeMath {
 }
 // require(b <= a);
 
-contract Zhanerke is ERC20Interface, SafeMath {
+contract Zhanerke is ERC20Interface, Math {
     string public name;
     string public symbol;
     uint8 public decimals; // 18 decimals is the strongly suggested default, avoid changing it
